@@ -1,0 +1,7 @@
+
+
+<h4>{{product?.pName}}</h4>
+<p>The product with id <strong>{{product?.pid}}</strong>'s status is <strong>{{product?.pStatus}}</strong>.</p>
+<button class="btn btn-info" 
+(click)="goToEditProduct()"
+[disabled]="!product?.canEdit" >Edit Product</button>
